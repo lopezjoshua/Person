@@ -4,3 +4,7 @@ Derived classes are
 1. Manager
 2. Volunteer
 3. Donor
+
+The idea is Person class will hold all of the base functionality.
+Functions and data shared by Managers, Donors AND Volunteers will be made in Person,
+Functions and data unique to managers will be made only to manager clas.
