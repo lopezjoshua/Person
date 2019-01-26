@@ -8,6 +8,6 @@ Derived classes are:
 
 The idea is Person class will hold all of the base functionality.
 
-Functions and data shared by Managers, Donors AND Volunteers will be made in __Person class__.
+Functions and data shared by Managers, Donors AND Volunteers will be made in __Person__ class.
 
-Functions and data unique to managers will be made only to __manager class__.
+Functions and data unique to managers will be made only to __Manager__ class.
