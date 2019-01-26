@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+
 public abstract class Person implements Serializable{
     private Integer ID = 0;
     private static int personCount = 0;
@@ -23,6 +24,7 @@ public abstract class Person implements Serializable{
 
     public void setSex(Sex sex){
         this.sex = sex;
+        setLastModified();
     }
 
     public Sex getSex(){
@@ -36,20 +38,32 @@ public abstract class Person implements Serializable{
 
 
     public void setFirstName(String firstName){
-        if (!firstName.contentEquals(""))
+        if (!firstName.contentEquals("")){
             this.firstName = firstName;
+            setLastModified();
+        }
     }
 
 
     public void setMiddleName(String middleName){
-        if(!middleName.contentEquals(""))
+        if(!middleName.contentEquals("")) {
             this.middleName = middleName;
+            setLastModified();
+        }
     }
 
 
     public void setLastName(String lastName){
-        if(!lastName.contentEquals(""))
+        if(!lastName.contentEquals("")) {
             this.lastName = lastName;
+            setLastModified();
+        }
+    }
+
+    public void setLastModified()
+    {
+        this.lastModifiedDate = LocalDate.now();
+        this.lastModifiedTime = LocalTime.now();
     }
 
 
