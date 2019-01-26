@@ -5,14 +5,42 @@ public class Main {
     public static void main(String[] args) {
 
 
-        ManagerController myManagerController = new ManagerController();
+        PersonController personController = new PersonController();
 
+
+        // Making and listing sample Managers here
         for (int a = 1; a < 5; a++) {
             Manager myNewManager = new Manager("James", "M.", "Stallings");
-            myManagerController.AddManager(myNewManager);
+            personController.AddManager(myNewManager);
         }
 
-        myManagerController.Managers.forEach((k,v)->System.out.println("Manager ID: "+k+" is "+v.getFullName()));
+        personController.Managers.forEach((k,v)->System.out.println("Manager ID: "+k+" is "+v.getFullName()));
+
+
+
+
+
+        //Making and listing sample Donors here
+        for (int a = 1; a < 5; a++) {
+            Donor myNewDonor = new Donor("James", "M.", "Stallings");
+            personController.AddDonors(myNewDonor);
+        }
+
+        personController.Donors.forEach((k,v)->System.out.println("Donor ID: "+k+" is "+v.getFullName()));
+
+
+
+
+
+
+        //Making and listing sample Volunteers here
+        for (int a = 1; a < 5; a++) {
+            Volunteer myNewVolunteer = new Volunteer("James", "M.", "Stallings");
+            personController.AddVolunteer(myNewVolunteer);
+        }
+
+        personController.Volunteers.forEach((k,v)->System.out.println("Volunteer ID: "+k+" is "+v.getFullName()));
+
 
     }
 }
