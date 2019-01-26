@@ -60,7 +60,7 @@ public abstract class Person implements Serializable{
         }
     }
 
-    public void setLastModified()
+    private void setLastModified()
     {
         this.lastModifiedDate = LocalDate.now();
         this.lastModifiedTime = LocalTime.now();
