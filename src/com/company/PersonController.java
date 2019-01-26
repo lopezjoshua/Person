@@ -24,18 +24,5 @@ public class PersonController {
         Volunteers.put(volunteer.getID(), volunteer);
     }
 
-    public void ListManagers(int managerAtIndex){
-        System.out.println(Managers.get(managerAtIndex).getFullName());
     }
-
-    public void ListDonors(int donorAtIndex){
-        System.out.println(Donors.get(donorAtIndex).getFullName());
-    }
-
-    public void ListVolunteers(int volunteerAtIndex){
-        System.out.println(Volunteers.get(volunteerAtIndex).getFullName());
-    }
-
-
-
-}
+    
