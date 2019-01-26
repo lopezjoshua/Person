@@ -1,5 +1,5 @@
 # PERSON class test
-This is a test of an abstract Person class and several derived classes 
+This is a test of an abstract __Person__ class and several derived classes 
 
 Derived classes are:
 1. Manager
