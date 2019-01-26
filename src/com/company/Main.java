@@ -27,8 +27,10 @@ public class Main {
             personController.AddDonors(myNewDonor);
         }
 
-        // Getting more data from EACH Donor (CreationDate and CreationTime were set automatically in PersonClass Constructor.
-        personController.Donors.forEach((k,v)->System.out.println("Donor ID: "+k+" is "+v.getFullName()+". The record was created on "+v.getCreationDate()+" at "+v.getCreationTime()));
+        // Getting more data from EACH Donor
+        // (CreationDate and CreationTime were set automatically in PersonClass Constructor.)
+        personController.Donors.forEach((k,v)->System.out.println("Donor ID: "+k+" is "+v.getFullName()+". " +
+                "The record was created on "+v.getCreationDate()+" at "+v.getCreationTime()));
 
 
 
