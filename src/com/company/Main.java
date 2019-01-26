@@ -26,7 +26,8 @@ public class Main {
             personController.AddDonors(myNewDonor);
         }
 
-        personController.Donors.forEach((k,v)->System.out.println("Donor ID: "+k+" is "+v.getFullName()));
+        personController.Donors.forEach((k,v)->System.out.println("Donor ID: "+k+" is "+v.getFullName()+". The record was created on "+v.getCreationDate()+" at "+v.getCreationTime()));
+
 
 
 
