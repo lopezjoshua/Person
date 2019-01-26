@@ -23,7 +23,7 @@ public class Main {
 
         //Making and listing sample Donors here
         for (int a = 1; a < 5; a++) {
-            Donor myNewDonor = new Donor("James", "M.", "Stallings");
+            Donor myNewDonor = new Donor("Barry", "M.", "Stallings");
             personController.AddDonors(myNewDonor);
         }
 
@@ -37,7 +37,7 @@ public class Main {
 
         //Making and listing sample Volunteers here
         for (int a = 1; a < 5; a++) {
-            Volunteer myNewVolunteer = new Volunteer("James", "M.", "Stallings");
+            Volunteer myNewVolunteer = new Volunteer("Frederick", "M.", "Stallings");
             personController.AddVolunteer(myNewVolunteer);
         }
 
