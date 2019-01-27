@@ -3,6 +3,7 @@ package com.company;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.Objects;
 
 
 public abstract class Person implements Serializable{
@@ -22,18 +23,20 @@ public abstract class Person implements Serializable{
         this.ID = ++personCount;  // automatically increment ID
     }
 
+    public Person(String firstName, String middleName, String lastName) {
+        this();
+        setFirstName(firstName);
+        setMiddleName(middleName);
+        setLastName(lastName);
+    }
+
     public void setSex(Sex sex){
         this.sex = sex;
         setLastModified();
     }
 
     public Sex getSex(){
-        if (this.sex !=null){
-            return this.sex;
-        }
-        else {
-            return Sex.Un_Specified;
-        }
+        return Objects.requireNonNullElse(this.sex, Sex.Un_Specified);
     }
 
 

@@ -7,7 +7,7 @@ public class Donor extends Person {
     }
 
     public Donor(String firstName, String middleName, String lastName){
-        setFirstName(firstName);
+        setLastName(firstName);
         setMiddleName(middleName);
         setLastName(lastName);
     }

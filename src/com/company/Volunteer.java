@@ -7,10 +7,11 @@ public class Volunteer extends Person{
     }
 
     public Volunteer(String firstName, String middleName, String lastName){
-        setFirstName(firstName);
+        setLastName(firstName);
         setMiddleName(middleName);
         setLastName(lastName);
     }
+
 
     // ADD code specific to Volunteers here.
 
