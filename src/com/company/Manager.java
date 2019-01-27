@@ -7,10 +7,11 @@ public class Manager extends Person {
     }
 
     public Manager(String firstName, String middleName, String lastName){
-        setLastName(firstName);
+        setFirstName(firstName);
         setMiddleName(middleName);
         setLastName(lastName);
     }
+
 
     // ADD code specific to Managers here.
 
